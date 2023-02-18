@@ -2,12 +2,31 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
+.header-link:focus,
+.link:hover {
+	color: #404bbf;
+}
+.adress-mail:focus,
+.adress-mail:hover {
+	color: #404bbf;
+}
+
+.adress-tel:hover,
+.adress-tel:focus {
+	color: #404bbf;
+}
+
+.mail:focus {
+}
+
+.mail:hover {
+}
 /* header */
 
 .header {
 }
 
-.span {
+.header-span {
 	font-family: "Raleway";
 	font-style: normal;
 	font-weight: 800;
@@ -40,6 +59,7 @@ body {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: #2e2f42;
+	cursor: pointer;
 }
 .header-list {
 }
@@ -61,7 +81,7 @@ body {
 /* hero */
 
 .hero-section {
-	background-color: #2e2f42;
+	background: #2e2f42;
 }
 .hero-title {
 	font-weight: 700;
@@ -72,15 +92,16 @@ body {
 	color: #ffffff;
 }
 .hero-btn {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.5;
-	display: flex;
-	align-items: center;
-	letter-spacing: 0.04em;
-	color: #ffffff;
+	background: #4d5ae5;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	cursor: pointer;
 }
 
+.hero-btn:focus,
+.hero-btn:hover {
+	background-color: rgba(64, 75, 191, 1);
+}
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -173,4 +194,62 @@ body {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: #e7e9fc;
+}
+
+/* Portfolio */
+
+.hero-portfolio {
+}
+.hero-portfolio-btn {
+	background: #f4f4fd;
+	border: 1px solid #e7e9fc;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.hero-portfolio-description {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.04em;
+	color: #4d5ae5;
+}
+.hero-portfolio-all {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.04em;
+
+	color: #ffffff;
+}
+.hero-portfolio-btn-all {
+	background: #404bbf;
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+	cursor: pointer;
+}
+.portfolio {
+}
+.portfolio-list {
+}
+.portfolio-list-objects {
+}
+.portfolio-list-title {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	color: #2e2f42;
+}
+.portfolio-list-text {
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+
+	color: #434455;
 }
