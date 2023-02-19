@@ -32,13 +32,8 @@ body {
 	order: 0;
 	flex-grow: 0;
 }
-.mail:focus {
-}
-
 a {
 	text-decoration: none;
-}
-.mail:hover {
 }
 /* header */
 
