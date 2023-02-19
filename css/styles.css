@@ -11,7 +11,9 @@ body {
 .adress-mail:hover {
 	color: #4d5ae5;
 }
-
+li {
+	list-style-type: none;
+}
 .adress-tel:hover,
 .adress-tel:focus {
 	color: #4d5ae5;
@@ -51,9 +53,7 @@ a {
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: #4d5ae5;
-	flex: none;
-	order: 0;
-	flex-grow: 0;
+	white-space: nowrap;
 }
 
 .header-span-2 {
@@ -67,6 +67,7 @@ a {
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: #2e2f42;
+	white-space: nowrap;
 }
 .header-link-studio {
 	font-family: "Raleway";
