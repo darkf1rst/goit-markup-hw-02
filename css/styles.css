@@ -4,21 +4,40 @@ body {
 
 .header-link:focus,
 .link:hover {
-	color: #404bbf;
+	color: #4d5ae5;
+	text-decoration: underline #404bbf;
 }
 .adress-mail:focus,
 .adress-mail:hover {
-	color: #404bbf;
+	color: #4d5ae5;
 }
 
 .adress-tel:hover,
 .adress-tel:focus {
-	color: #404bbf;
+	color: #4d5ae5;
 }
 
+.footer-span {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 1.33;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #f4f4fd;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
 .mail:focus {
 }
 
+a {
+	text-decoration: none;
+}
 .mail:hover {
 }
 /* header */
@@ -40,6 +59,19 @@ body {
 	flex: none;
 	order: 0;
 	flex-grow: 0;
+}
+
+.header-span-2 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 1.33;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #2e2f42;
 }
 .header-link-studio {
 	font-family: "Raleway";
@@ -215,6 +247,7 @@ body {
 	text-align: center;
 	letter-spacing: 0.04em;
 	color: #4d5ae5;
+	cursor: pointer;
 }
 .hero-portfolio-all {
 	font-weight: 500;
@@ -252,4 +285,10 @@ body {
 	letter-spacing: 0.02em;
 
 	color: #434455;
+}
+
+.hero-portfolio-description:focus,
+.hero-portfolio-description:hover {
+	color: #4d5ae5;
+	text-decoration: underline #404bbf;
 }
