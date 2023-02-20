@@ -8,17 +8,19 @@ body {
 	--secondary-title-color: #ffffff;
 	--main-button-color: #4d5ae5;
 	--secondary-link-color: #434455;
+	--main-underline-color: #404bbf;
 }
 .header-link:focus,
-.link:hover {
+.header-link:hover {
 	color: var(--main-button-color);
-	text-decoration: underline #404bbf;
+	text-decoration: underline var(--main-underline-color);
 }
 .adress-mail:focus,
 .adress-mail:hover {
 	color: var(--main-button-color);
+	text-decoration: underline var(--main-underline-color);
 }
-.btn {
+btn {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
@@ -31,6 +33,7 @@ li {
 .adress-tel:hover,
 .adress-tel:focus {
 	color: var(--main-button-color);
+	text-decoration: underline var(--main-underline-color);
 }
 
 a {
@@ -70,7 +73,6 @@ a {
 }
 .adress {
 	font-family: "Roboto" sans-serif;
-	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
