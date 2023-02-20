@@ -1,39 +1,38 @@
 body {
 	font-family: "Roboto", sans-serif;
+	background-color: var(--secondary-title-color);
+	color: var(--main-title-color);
 }
-
+:root {
+	--main-title-color: #2e2f42;
+	--secondary-title-color: #ffffff;
+	--main-button-color: #4d5ae5;
+	--secondary-link-color: #434455;
+}
 .header-link:focus,
 .link:hover {
-	color: #4d5ae5;
+	color: var(--main-button-color);
 	text-decoration: underline #404bbf;
 }
 .adress-mail:focus,
 .adress-mail:hover {
-	color: #4d5ae5;
+	color: var(--main-button-color);
 }
+.btn {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	cursor: pointer;
+}
+
 li {
 	list-style-type: none;
 }
 .adress-tel:hover,
 .adress-tel:focus {
-	color: #4d5ae5;
+	color: var(--main-button-color);
 }
 
-.footer-span {
-	font-family: "Raleway";
-	font-style: normal;
-	font-weight: 800;
-	font-size: 18px;
-	line-height: 1.33;
-	display: flex;
-	align-items: center;
-	letter-spacing: 0.03em;
-	text-transform: uppercase;
-	color: #f4f4fd;
-	flex: none;
-	order: 0;
-	flex-grow: 0;
-}
 a {
 	text-decoration: none;
 }
@@ -44,72 +43,56 @@ a {
 
 .header-span {
 	font-family: "Raleway";
-	font-style: normal;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 1.33;
-	display: flex;
-	align-items: center;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	color: #4d5ae5;
-	white-space: nowrap;
+	color: var(--main-button-color);
 }
 
-.header-span-2 {
-	font-family: "Raleway";
-	font-style: normal;
-	font-weight: 800;
-	font-size: 18px;
-	line-height: 1.33;
-	display: flex;
-	align-items: center;
-	letter-spacing: 0.03em;
-	text-transform: uppercase;
-	color: #2e2f42;
-	white-space: nowrap;
-}
 .header-link-studio {
 	font-family: "Raleway";
-	font-style: normal;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 1.33;
-	display: flex;
-	align-items: center;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	color: #2e2f42;
+	color: var(--main-title-color);
 }
 .header-link {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: #2e2f42;
+	color: var(--main-title-color);
 	cursor: pointer;
 }
-.header-list {
-}
-.adress-list {
+.adress {
+	font-family: "Roboto" sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--secondary-link-color);
 }
 .adress-tel {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: #434455;
+	color: var(--secondary-link-color);
 }
 .adress-mail {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: #434455;
+	color: var(--secondary-link-color);
 }
 
 /* hero */
 
 .hero-section {
-	background: #2e2f42;
+	background: var(--main-title-color);
 }
 .hero-title {
 	font-weight: 700;
@@ -117,13 +100,14 @@ a {
 	line-height: 1.07;
 	text-align: center;
 	letter-spacing: 0.02em;
-	color: #ffffff;
+	color: var(--secondary-title-color);
 }
 .hero-btn {
-	background: #4d5ae5;
+	background: var(--main-button-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	cursor: pointer;
+	color: var(--secondary-title-color);
 }
 
 .hero-btn:focus,
@@ -155,13 +139,13 @@ a {
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
-	color: #2e2f42;
+	color: var(--main-title-color);
 }
 .section-2-list-text {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: #434455;
+	color: var(--secondary-link-color);
 }
 
 /* section3 */
@@ -170,10 +154,8 @@ a {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.11;
-	text-align: center;
 	letter-spacing: 0.02em;
-	text-transform: capitalize;
-	color: #2e2f42;
+	color: var(--main-title-color);
 }
 
 /* Our team */
@@ -185,10 +167,9 @@ a {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.11;
-	text-align: center;
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
-	color: #2e2f42;
+	color: var(--main-title-color);
 }
 .team-list {
 }
@@ -198,24 +179,30 @@ a {
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
-	text-align: center;
 	letter-spacing: 0.02em;
-	color: #2e2f42;
+	color: var(--main-title-color);
 }
 .team-list-description {
 	font-size: 16px;
 	line-height: 1.5;
 	text-align: center;
 	letter-spacing: 0.02em;
-	color: #434455;
+	color: var(--secondary-link-color);
 }
 
 /* footer */
 
 .footer {
-	background-color: #2e2f42;
+	background-color: var(--main-title-color);
 }
 .foooter-link {
+	font-family: "Raleway";
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 1.33;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #f4f4fd;
 }
 .footer-description {
 	font-size: 16px;
@@ -226,40 +213,29 @@ a {
 
 /* Portfolio */
 
-.hero-portfolio {
+.hero-portfolio-list {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	color: var(--main-button-color);
+	cursor: pointer;
 }
 .hero-portfolio-btn {
-	background: #f4f4fd;
-	border: 1px solid #e7e9fc;
-	border-radius: 4px;
-	cursor: pointer;
-}
-.hero-portfolio-description {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
-	display: flex;
-	align-items: center;
-	text-align: center;
 	letter-spacing: 0.04em;
-	color: #4d5ae5;
+	color: var(--main-button-color);
 	cursor: pointer;
-}
-.hero-portfolio-all {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.5;
-	display: flex;
-	align-items: center;
-	text-align: center;
-	letter-spacing: 0.04em;
-
-	color: #ffffff;
 }
 .hero-portfolio-btn-all {
-	background: #404bbf;
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-	border-radius: 4px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	color: var(--secondary-title-color);
+	background: var(--main-button-color);
 	cursor: pointer;
 }
 .portfolio {
@@ -273,18 +249,17 @@ a {
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
-	color: #2e2f42;
+	color: var(--main-title-color);
 }
 .portfolio-list-text {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-
-	color: #434455;
+	color: var(--secondary-link-color);
 }
 
-.hero-portfolio-description:focus,
-.hero-portfolio-description:hover {
-	color: #4d5ae5;
+.hero-portfolio-btn:focus,
+.hero-portfolio-btn:hover {
+	color: var(--main-button-color);
 	text-decoration: underline #404bbf;
 }
