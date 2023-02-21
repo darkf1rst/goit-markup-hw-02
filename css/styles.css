@@ -9,18 +9,20 @@ body {
 	--main-button-color: #4d5ae5;
 	--secondary-link-color: #434455;
 	--main-underline-color: #404bbf;
+	--main-background-btn-color: rgba(64, 75, 191, 1);
+	--main-background-color: #f4f4fd;
+	--main-boxshadow-color: rgba(0, 0, 0, 0.15);
+	--secondary-background-btn-color: #e7e9fc;
 }
 .header-link:focus,
 .header-link:hover {
 	color: var(--main-button-color);
-	text-decoration: underline var(--main-underline-color);
 }
 .adress-mail:focus,
 .adress-mail:hover {
 	color: var(--main-button-color);
-	text-decoration: underline var(--main-underline-color);
 }
-btn {
+.btn {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
@@ -33,7 +35,6 @@ li {
 .adress-tel:hover,
 .adress-tel:focus {
 	color: var(--main-button-color);
-	text-decoration: underline var(--main-underline-color);
 }
 
 a {
@@ -72,11 +73,8 @@ a {
 	cursor: pointer;
 }
 .adress {
-	font-family: "Roboto" sans-serif;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.02em;
 	color: var(--secondary-link-color);
+	font-style: normal;
 }
 .adress-tel {
 	font-size: 16px;
@@ -106,15 +104,14 @@ a {
 }
 .hero-btn {
 	background: var(--main-button-color);
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 4px 4px var(--main-boxshadow-color);
 	border-radius: 4px;
-	cursor: pointer;
 	color: var(--secondary-title-color);
 }
 
 .hero-btn:focus,
 .hero-btn:hover {
-	background-color: rgba(64, 75, 191, 1);
+	background-color: var(--main-background-btn-color);
 }
 .visually-hidden {
 	position: absolute;
@@ -163,7 +160,7 @@ a {
 /* Our team */
 
 .team {
-	background-color: #f4f4fd;
+	background-color: var(--main-background-color);
 }
 .team-title {
 	font-weight: 700;
@@ -204,13 +201,13 @@ a {
 	line-height: 1.33;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	color: #f4f4fd;
+	color: var(--main-background-color);
 }
 .footer-description {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: #e7e9fc;
+	color: var(--secondary-background-btn-color);
 }
 
 /* Portfolio */
@@ -263,5 +260,5 @@ a {
 .hero-portfolio-btn:focus,
 .hero-portfolio-btn:hover {
 	color: var(--main-button-color);
-	text-decoration: underline #404bbf;
+	background-color: var(--secondary-background-btn-color);
 }
